@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:src="@drawable/logo"></ImageView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee Register"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        ></TextView>
+
+
+
+
+
+    <EditText
+        android:layout_below="@+id/logo"
+        android:id="@+id/re_Name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Name"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:textColorHint="#6F000000"
+        ></EditText>
+
+
+
+    <com.santalu.maskedittext.MaskEditText
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/re_Name"
+        android:id="@+id/re_contact"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Contact number"
+        android:textColorHint="#6F000000"
+        app:met_mask="+(91)##########"
+        android:inputType="phone"
+        ></com.santalu.maskedittext.MaskEditText>
+
+
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/re_contact"
+        android:id="@+id/re_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Email"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:textColorHint="#6F000000"
+        android:inputType="textEmailAddress"
+        ></EditText>
+    <EditText
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/re_email"
+        android:id="@+id/re_Password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#6F000000"
+        ></EditText>
+
+    <EditText
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/re_Password"
+        android:id="@+id/re_Re_Password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Re enter Password"
+        android:inputType="textPassword"
+        android:textColorHint="#6F000000"
+
+        ></EditText>
+
+    <Button
+        android:id="@+id/re_sendVerification"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Verification"
+        android:textSize="16dp"
+        android:textAllCaps="false"
+        android:background="@drawable/button_black"
+        android:layout_below="@+id/re_Re_Password"
+        android:layout_marginTop="30dp"
+        ></Button>
+
+
+    <Button
+        android:id="@+id/re_Register"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="16dp"
+        android:textAllCaps="false"
+        android:background="@drawable/button_black"
+        android:layout_below="@+id/re_sendVerification"
+        android:layout_marginTop="10dp"
+        ></Button>
+
+
+
+</LinearLayout>

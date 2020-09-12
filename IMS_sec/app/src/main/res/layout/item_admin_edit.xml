@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgItemPicture_item"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_addimage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"></ImageView>
+
+
+            <TextView
+                android:id="@+id/tvItemName_item"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Please enter the name of item"
+                android:textSize="13dp"
+                android:paddingLeft="10dp"
+                android:textAlignment="center"
+                ></TextView>
+
+
+            <TextView
+                android:id="@+id/tvItemNumber_item"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add number of item"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textAlignment="center"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/tvChooseItemtype_item"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:hint="Item type"
+                android:textSize="13dp"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                ></TextView>
+
+            <Button
+                android:id="@+id/btn_editItem"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/buttonstyle"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:text="Need to remove"
+                ></Button>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

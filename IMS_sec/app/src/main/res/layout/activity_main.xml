@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:layout_above="@+id/mn_admin_act"
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:src="@drawable/logo"></ImageView>
+
+    <Button
+        android:layout_centerInParent="true"
+        android:id="@+id/mn_admin_act"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login as Admin"
+        android:textSize="16dp"
+        android:textAllCaps="false"
+        android:background="@drawable/button_black"
+        android:layout_marginTop="30dp"
+        ></Button>
+
+
+    <Button
+        android:id="@+id/mn_employee_act"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login as Employee"
+        android:textSize="16dp"
+        android:textAllCaps="false"
+        android:background="@drawable/button_black"
+        android:layout_below="@+id/mn_admin_act"
+        android:layout_marginTop="30dp"
+        ></Button>
+
+
+
+</RelativeLayout>
+

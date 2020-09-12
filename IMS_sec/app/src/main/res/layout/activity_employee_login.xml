@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeLogin"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:src="@drawable/logo"></ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee Login"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        ></TextView>
+
+
+
+    <EditText
+        android:layout_below="@+id/logo"
+        android:id="@+id/em_username_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="User Name"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:textColorHint="#6F000000"
+        android:layout_marginTop="20dp"
+        ></EditText>
+
+
+    <EditText
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/em_username_login"
+        android:id="@+id/em_password_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#6F000000"
+        ></EditText>
+
+
+
+    <Button
+        android:id="@+id/em_btnEmployee_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:text="Login as employee"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:background="@drawable/button_black"
+        ></Button>
+
+    <TextView
+        android:id="@+id/em_Register"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="16dp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/em_btnEmployee_login"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        ></TextView>
+
+</LinearLayout>
